@@ -1,0 +1,45 @@
+
+/* 
+  LauguageString.strings
+  HuaZang
+
+  Created by BIN on 2019/5/22.
+  Copyright © 2019 Neusoft. All rights reserved.
+*/
+
+"InternetRadioStation"="儒釋道網路電台";
+"NoAudioTips"="未選擇任何音頻，是否打開音頻管理";
+"Confirm"="確定";
+"Cancel"="取消";
+"VideoLive"="視頻直播";
+"AudioOnDemand"="音頻點播";
+"AudioOnDemandManagement"="音頻點播管理";
+"AudioDownload"="音頻下載";
+"TheLatestNews"="最新消息";
+"Language"="正體/簡體";
+"ContactUs"="聯繫我們";
+"UnknownError"="未知錯誤";
+
+"WebSite"="官方網站";
+"Facebook"="Facebook";
+"Line"="Line@";
+"Weibo"="新浪微博";
+"TencentWeibo"="騰訊微博";
+"Email"="電子郵箱";
+"WeChat"="微信號";
+"FeedbackEmail"="問題反饋電子郵箱";
+"RecommendToFriends"="向好友推薦";
+
+"NewDownLoad"="＋新的下載任務";
+"AlreadyDownLoad"="已下載";
+"Done"="完成";
+"AudioList"="音頻列表";
+"UnDownLoad"="未下載";
+"DownLoad"="下載";
+"AllStart"="全部開始";
+"AllStop"="全部停止";
+"AllDelete"="全部刪除";
+"Stop"="停止";
+"HaveDown"="已存在這個下載任務";
+"Delete"="刪除";
+"ConfirmDelete"="确认删除?";

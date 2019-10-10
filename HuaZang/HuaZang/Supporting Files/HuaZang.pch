@@ -1,0 +1,56 @@
+//
+//  HuaZang.pch
+//  HuaZang
+//
+//  Created by BIN on 2019/4/23.
+//  Copyright © 2019 Neusoft. All rights reserved.
+//
+
+#ifndef HuaZang_pch
+#define HuaZang_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#import <Masonry.h>
+#import <ReactiveObjC.h>
+#import <AFNetworking.h>
+#import "RemoteUtil.h"
+#import "UIColor+HZColor.h"
+#import "InternationalControl.h"
+#import "LanguageBase.h"
+
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+#define WapDomain @"https://amtbapi.amtb.de/"
+#define WapDownLoad [[NSUserDefaults standardUserDefaults] objectForKey:@"downloadURLString"]
+
+#define kIsiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define kIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kIsiPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kIsiPhoneXS_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kIsiPhoneX_Series (kIsiPhoneX||kIsiPhoneXR||kIsiPhoneXS_Max)
+
+#define kNavBarHeight 44.0
+#define kBottomHeight (kIsiPhoneX_Series?34:0)
+#define kTabBarHeight (kIsiPhoneX_Series?83:49)
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+
+#define kScreenSize [UIScreen mainScreen].bounds.size
+#define kScreenRect [UIScreen mainScreen].bounds
+#define kScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
+#define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+#define kScreenRadio CGRectGetWidth([UIScreen mainScreen].bounds)/CGRectGetHeight([UIScreen mainScreen].bounds)
+#define kPhoneScalW kScreenWidth/375
+#define kPhoneScalH kScreenHeight/667
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* HuaZang_pch */
